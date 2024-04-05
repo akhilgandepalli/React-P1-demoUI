@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 10px;
+}
+header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    border-bottom: 5px solid gray;
+    margin-bottom: 10px;
+}
+.logo img{
+    width: 90px;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+ul li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28vw;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.search-form{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    /* border: .5px solid; */
+}
+.search-input:focus{
+    height: 30px;
+    border: .5px solid;
+}
+.search-input{
+    border: none;
+    padding: 7px 5px;
+    outline: none;
+    background-color: rgb(220, 219, 219);
+}
+.search-btn{
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+.search-btn ion-icon{
+    padding: 4.5px 4px 0 4px;
+}
+
+/* slideshow */
+main{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow-container{
+    width: 95%;
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.slides img{
+    width: 100%;
+    height: 500px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.2);;
+}
+.next{
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot-container{
+    position: absolute;
+    bottom: 5%;
+    right: 45%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
